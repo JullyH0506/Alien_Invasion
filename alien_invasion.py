@@ -571,8 +571,7 @@ class AlienInvasion:
 				self._active_game()
 			else:
 				self.game_title.show_title()
-				self.continue_button.draw_button(self.settings.screen_width/2 - self.continue_button.image_rect.width,
-				 self.settings.screen_height/2 - self.continue_button.image_rect.height)
+				self.continue_button.draw_button()
 
 		if not self.stats.game_active:
 			self._unactive_game()

@@ -29,3 +29,7 @@ class ContinueButton(SoundButton):
 	def __init__(self, ai_game):
 		super().__init__(ai_game)
 		self.image = pygame.image.load("images/continue.bmp")
+		self.image_rect = self.image.get_rect()
+	def draw_button(self):
+		self.image_rect.center = self.screen_rect.center 
+		self.screen.blit(self.image, self.image_rect)
