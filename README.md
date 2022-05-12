@@ -35,3 +35,4 @@ To run:
 ```
 $ py alien_invasion.py
 ```
+Have fun!
