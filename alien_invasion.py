@@ -32,7 +32,7 @@ class AlienInvasion:
 		pygame.display.set_caption("Alien Invasion")
 
 		# Create an instance to store game statistics,
-    # and a scoreboard.
+		# and a scoreboard.
 		self.stats = GameStats(self)
 		self.sb = Scoreboard(self)
 
@@ -251,7 +251,7 @@ class AlienInvasion:
 
 	def _update_bullets(self):
 		"""Update position of bullets and get rid of old bullets."""
-    # Update bullet positions.
+		# Update bullet positions.
 		self.bullets.update()
 
 		# Get rid of bullets that have disappeared.
@@ -264,7 +264,7 @@ class AlienInvasion:
 
 	def _check_bullet_alien_colllisions(self):
 		"""Respond to bullet-alien collisions."""
-    # Remove any bullets and aliens that have collided.
+		# Remove any bullets and aliens that have collided.
 		collisions = pygame.sprite.groupcollide(
 			self.bullets, self.aliens, True, True)
 
@@ -332,8 +332,8 @@ class AlienInvasion:
 	def _update_aliens(self): 
 		"""
 		Check if the fleet is at an edge,
-    then update the positions of all aliens in the fleet.
-    """
+		then update the positions of all aliens in the fleet.
+		"""
 		self._check_fleet_edges()
 		self.aliens.update()
 
@@ -401,7 +401,7 @@ class AlienInvasion:
 	def _create_fleet(self):
 		"""Create the fleet of aliens."""
 		# Create an alien and find the number of aliens in a row.
-    # Spacing between each alien is equal to one alien width.
+		# Spacing between each alien is equal to one alien width.
 		alien = Alien(self)
 		alien_width, alien_height = alien.rect.size
 		available_space_x = self.settings.screen_width - (2 * alien_width)
